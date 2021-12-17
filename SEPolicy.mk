@@ -1,4 +1,4 @@
-# Board specific SELinux policy variable definitions
+\# Board specific SELinux policy variable definitions
 SEPOLICY_PATH:= device/qcom/sepolicy-legacy-um
 SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS := \
     $(SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS) \
@@ -48,4 +48,4 @@ ifneq (,$(filter sdm660 msm8937 msm8953 msm8996 msm8998, $(TARGET_BOARD_PLATFORM
     endif
 endif
 
--include device/aosp/sepolicy/qcom/sepolicy.mk
+-include device/lineage/sepolicy/qcom/sepolicy.mk
